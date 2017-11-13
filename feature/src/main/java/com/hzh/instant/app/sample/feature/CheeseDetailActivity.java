@@ -24,8 +24,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
-
 
 public class CheeseDetailActivity extends AppCompatActivity {
 
@@ -52,7 +50,8 @@ public class CheeseDetailActivity extends AppCompatActivity {
 
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
-        Glide.with(this).load(Cheeses.getRandomCheeseDrawable()).centerCrop().into(imageView);
+        //Glide.with(this).load(Cheeses.getRandomCheeseDrawable()).centerCrop().into(imageView);
+        imageView.setImageResource(Cheeses.getRandomCheeseDrawable());
     }
 
     @Override

@@ -30,8 +30,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -118,11 +116,11 @@ public class CheeseListFragment extends Fragment {
                     context.startActivity(intent);
                 }
             });
-
-            Glide.with(holder.mImageView.getContext())
-                    .load(Cheeses.getRandomCheeseDrawable())
-                    .fitCenter()
-                    .into(holder.mImageView);
+//            Glide.with(holder.mImageView.getContext())
+//                    .load(Cheeses.getRandomCheeseDrawable())
+//                    .fitCenter()
+//                    .into(holder.mImageView);
+            holder.mImageView.setImageResource(Cheeses.getRandomCheeseDrawable());
         }
 
         @Override
