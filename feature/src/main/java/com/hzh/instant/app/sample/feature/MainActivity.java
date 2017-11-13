@@ -16,6 +16,8 @@
 
 package com.hzh.instant.app.sample.feature;
 
+
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -136,9 +138,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new CheeseListFragment(), "Category 1");
-        adapter.addFragment(new CheeseListFragment(), "Category 2");
-        adapter.addFragment(new CheeseListFragment(), "Category 3");
+        Resources resources = getResources();
+        adapter.addFragment(new CheeseListFragment(), resources.getString(com.hzh.instant.app.sample.R.string.app_tab_category_1));
+        adapter.addFragment(new CheeseListFragment(), resources.getString(com.hzh.instant.app.sample.R.string.app_tab_category_2));
+        adapter.addFragment(new CheeseListFragment(), resources.getString(com.hzh.instant.app.sample.R.string.app_tab_category_3));
         viewPager.setAdapter(adapter);
     }
 

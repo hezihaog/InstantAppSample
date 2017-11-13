@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_drawer_item_home">主页</string>
+    <string name="app_drawer_item_message">消息</string>
+    <string name="app_drawer_item_friends">好友</string>
+    <string name="app_drawer_item_discussion">评论</string>
+
+    <string name="app_drawer_item_sub1">子条目1</string>
+    <string name="app_drawer_item_sub2">子条目2</string>
+
+    <string name="app_tab_category_1">分类 1</string>
+    <string name="app_tab_category_2">分类 2</string>
+    <string name="app_tab_category_3">分类 3</string>
+</resources>

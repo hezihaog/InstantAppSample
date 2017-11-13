@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2015 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,19 +15,29 @@
 -->
 
 <resources>
-  <string name="app_name">InstantAppSample</string>
+    <string name="app_name">InstantAppSample</string>
 
-  <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
     cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
     bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
     cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
     the big cheese.</string>
-  <string name="checkin">Checkin</string>
+    <string name="checkin">Checkin</string>
 
-  <string name="menu_night_mode">Night mode</string>
-  <string name="menu_night_mode_system">Follow system</string>
-  <string name="menu_night_mode_day">Day (always)</string>
-  <string name="menu_night_mode_night">Night (always)</string>
-  <string name="menu_night_mode_auto">Auto</string>
+    <string name="menu_night_mode">Night mode</string>
+    <string name="menu_night_mode_system">Follow system</string>
+    <string name="menu_night_mode_day">Day (always)</string>
+    <string name="menu_night_mode_night">Night (always)</string>
+    <string name="menu_night_mode_auto">Auto</string>
 
+    <string name="app_drawer_item_home">home</string>
+    <string name="app_drawer_item_message">message</string>
+    <string name="app_drawer_item_friends">friends</string>
+
+    <string name="app_drawer_item_sub1">sub item 1</string>
+    <string name="app_drawer_item_sub2">sub item 2</string>
+
+    <string name="app_tab_category_1">Category 1</string>
+    <string name="app_tab_category_2">Category 2</string>
+    <string name="app_tab_category_3">Category 3</string>
 </resources>

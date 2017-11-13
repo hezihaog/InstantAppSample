@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2015 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,29 +19,29 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_dashboard"
-            android:title="Home" />
+            android:title="@string/app_drawer_item_home" />
         <item
             android:id="@+id/nav_messages"
             android:icon="@drawable/ic_event"
-            android:title="Messages" />
+            android:title="@string/app_drawer_item_message" />
         <item
             android:id="@+id/nav_friends"
             android:icon="@drawable/ic_headset"
-            android:title="Friends" />
+            android:title="@string/app_drawer_item_friends" />
         <item
             android:id="@+id/nav_discussion"
             android:icon="@drawable/ic_forum"
-            android:title="Discussion" />
+            android:title="@string/app_drawer_item_discussion" />
     </group>
 
     <item android:title="Sub items">
         <menu>
             <item
                 android:icon="@drawable/ic_dashboard"
-                android:title="Sub item 1" />
+                android:title="@string/app_drawer_item_sub1" />
             <item
                 android:icon="@drawable/ic_forum"
-                android:title="Sub item 2" />
+                android:title="@string/app_drawer_item_sub2" />
         </menu>
     </item>
 
