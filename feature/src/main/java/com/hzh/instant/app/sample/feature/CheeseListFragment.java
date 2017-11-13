@@ -30,6 +30,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.google.android.instantapps.InstantApps;
+import com.hzh.instant.app.sample.feature.util.FakeUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -120,7 +124,14 @@ public class CheeseListFragment extends Fragment {
 //                    .load(Cheeses.getRandomCheeseDrawable())
 //                    .fitCenter()
 //                    .into(holder.mImageView);
-            holder.mImageView.setImageResource(Cheeses.getRandomCheeseDrawable());
+            if (InstantApps.isInstantApp(holder.mView.getContext())) {
+                holder.mImageView.setImageResource(Cheeses.getRandomCheeseDrawable());
+            } else {
+                Glide.with(holder.mImageView.getContext())
+                        .load(FakeUtil.getRandomAvatar())
+                        .fitCenter()
+                        .into(holder.mImageView);
+            }
         }
 
         @Override

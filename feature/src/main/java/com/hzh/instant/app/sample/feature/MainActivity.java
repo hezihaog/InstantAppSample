@@ -45,7 +45,6 @@ import java.util.List;
  * TODO
  */
 public class MainActivity extends AppCompatActivity {
-
     private DrawerLayout mDrawerLayout;
 
     @Override
@@ -106,6 +105,8 @@ public class MainActivity extends AppCompatActivity {
             case AppCompatDelegate.MODE_NIGHT_NO:
                 menu.findItem(R.id.menu_night_mode_day).setChecked(true);
                 break;
+            default:
+                break;
         }
         return true;
     }
@@ -130,7 +131,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void setNightMode(@AppCompatDelegate.NightMode int nightMode) {
         AppCompatDelegate.setDefaultNightMode(nightMode);
-
         if (Build.VERSION.SDK_INT >= 11) {
             recreate();
         }
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    static class Adapter extends FragmentPagerAdapter {
+    protected static class Adapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragments = new ArrayList<>();
         private final List<String> mFragmentTitles = new ArrayList<>();
 
